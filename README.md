@@ -6,6 +6,8 @@ This repository is built from the code of previous approaches. Thanks for their 
 
 In this repository, we have removed massive comments. Current code only contains zero-shot HOI detection. Full code is being constructed.
 
+Here ([FCL_VCOCO](https://github.com/zhihou7/FCL_VCOCO)) is the Code for V-COCO 
+
 Thanks for all reviewer's comments. Our new work, an extension of VCL, will be coming soon.
 
 ## Prerequisites
