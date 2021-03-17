@@ -612,7 +612,11 @@ class ResNet101():
 
         print('verbs')
         all_fc7_O = None
-        if is_training:
+        if is_training and self.model_name.__contains__('gan'):
+            # if model_name contains gan, we will use fabricator.
+            # here, gan do not mean that we use generative adversarial network.
+            # We just was planning to use to GAN. But, it is useless.
+            # Possibly, it is too difficult to tune the network with gan.
             gt_class = self.gt_class_HO[:num_stop]
             tmp_fc7_O = fc7_O[:num_stop]
             tmp_fc7_verbs = fc7_verbs[:num_stop]
