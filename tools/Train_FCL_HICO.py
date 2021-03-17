@@ -91,6 +91,9 @@ if __name__ == '__main__':
 
     net.set_ph(image, image_id, num_pos, Human_augmented, Object_augmented, action_HO, sp)
 
-    from models.train_Solver_HICO_FCL import train_net
+    if args.model.__contains__('gan'):
+        from models.train_Solver_HICO_FCL import train_net
+    else:
+        from models.train_Solver_HICO import train_net
     train_net(net, Trainval_GT, Trainval_N, output_dir, tb_dir, args.Pos_augment, args.Neg_select, args.Restore_flag, weight, max_iters=args.max_iters)
     
