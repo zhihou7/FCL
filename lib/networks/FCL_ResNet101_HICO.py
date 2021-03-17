@@ -634,6 +634,10 @@ class ResNet101():
             #         tf.float32)
             #     self.objects_loss(all_fc7_O, is_training, initializer, 'objects_loss', label='_o')
             #     pass
+        else:
+            fc7_O = fc7_O[:num_stop]
+            fc7_verbs = fc7_verbs[:num_stop]
+
         fc7_vo = self.head_to_tail_hoi(fc7_O, fc7_verbs, fc7_O_raw, fc7_verbs_raw, is_training, 'fc_HO')
         cls_prob_verbs = self.region_classification_hoi(fc7_vo, is_training, initializer, 'classification')
         if self.gt_class_HO_for_D_verbs is None:
