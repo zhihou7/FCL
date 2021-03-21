@@ -59,6 +59,9 @@ GT boxes annotation: https://drive.google.com/file/d/15UXbsoverISJ9wNO-84uI4kQEb
 This work was finished about 10 months ago. In the first submission, we compare the difference among COCO detector, Fine-tuned Detector and GT boxes. We further find DRG object detector largely increases the baseline. 
 All these comparisons illustrate the significant effect of object detector on HOI. That's really necessary to provide the performance of object detector.
 
+#### Pretrained Model
+
+Long-tailed Model: https://drive.google.com/file/d/144F7srsnVaXFa92dvsQtWm2Sm0b30jpi/view?usp=sharing
 
 ### Citations
 If you find this submission is useful for you, please consider citing:
