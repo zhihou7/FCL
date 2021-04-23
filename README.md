@@ -1,7 +1,7 @@
 ### Detecting Human-Object Interaction via Fabricated Compositional Learning (CVPR2021)
 We propose a Fabricated Compositional Learning approach to address the Open Long-tailed HOI detection.
 
-![avatar](misc/open_long_tailed_large.png)
+![avatar](misc/open_long_tailed_large1.png)
 
 This repository is built from the code of previous approaches. Thanks for their excellent work.
 
